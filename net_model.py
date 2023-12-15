@@ -31,7 +31,7 @@ def net_model(base_filtros, train_images,regularizers, w_regularizer, n_clases):
     model.add(Dropout(0.2))
 
     # - - - - - - - - - - - - - - - - - - - - -- - -
-    # Conv 3
+    # Conv 2
     model.add(
         Conv2D(
             filters=4 * base_filtros,
@@ -46,7 +46,7 @@ def net_model(base_filtros, train_images,regularizers, w_regularizer, n_clases):
     model.add(Dropout(0.2))
 
     # - - - - - - - - - - - - - - - - - - - - -- - -
-    # Conv 6
+    # Conv 3
     model.add(
         Conv2D(
             filters=16 * base_filtros,
